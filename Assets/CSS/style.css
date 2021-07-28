@@ -1,0 +1,112 @@
+/* * Reset/Universal Selector details all Global Element changes to be done  */
+* {
+  box-sizing: border-box;
+  /* Box-Sizing allows us to include the padding and border in an element's total width and height. */
+  margin: 0;
+  /* This resets the margin for all elements globally due to default margin on elements due to the browser  */
+  padding: 0;
+  /* This resets the padding for all elements globally due to default padding on elements due to the browser  */
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  /* The line height is here set to 1.6. This is a unitless value;
+meaning that the line height will be relative to the font size. This is usually recommended */
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  /* This gets rid of all underlines on links */
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+  /* This will make Headers 1-3 a little lighter in boldness than normal */
+  line-height: 1.2;
+  /* This will make the space between paragrphs a tad bit shorter/smaller */
+  margin: 10px 0;
+  /* Margin on ONLY top and bottom. This will add some space between headers. */
+}
+
+p {
+  margin: 10px 0;
+  /* Margin on ONLY top and bottom. This will add some space between paragraphs. */
+}
+
+img {
+  width: 100%;
+  /* This will keep the width of the images inside the set container. So even with a larger image, it will stay within the set container */
+}
+
+
+/* Home Logo and Title */
+
+.flex-container {
+  height: 670px;
+  /* margin-top: 24px; */
+  background: #004550;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* max-width: 1280px; */
+  padding: 0 40px;
+  margin: 24px auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  grid-gap: 20px;
+}
+
+.main-logo {
+  background-color: #004550;
+  position: relative;
+}
+
+.main-logo h3 {
+  margin: 15px 20px 15px 600px;
+  color: #fff;
+  padding: 20px 0 20px 0;
+  font-size: 28px;
+}
+
+.main-logo h1 {
+  font-size: 60px;
+  color: #fff;
+  margin: 1px 20px 1px 600px;
+}
+
+.Veeam-Logo {
+  width: 229px;
+  height: 81px;
+  margin: 70px 20px 70px 600px;
+}
+
+.Veeam-Computer {
+  position: absolute;
+  width: 295px;
+  height: 275px;
+  float: right;
+  bottom: 2px;
+  right: 10px;
+}
+
+.Veeam-Dots {
+  position: absolute;
+  width: 130px;
+  /* height: 275px; */
+  bottom: -70px;
+}
+
+
+
+
+.Register-Form {
+  background-color:#004550;
+  color: #fff;
+}
