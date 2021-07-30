@@ -13,13 +13,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
 
 
-    <div class="flex-container grid">
-      <section class="main-logo">
+    <!-- <div class="flex-container grid"> -->
+    <section class="flex-container grid">
+      <div class="main-logo card">
         <img class="Veeam-Logo" src="./Assets/Images/VeeamLogoOne.png" alt="VeeamMainLogo">
         <h3><span style="color: #93ea20;text-transform: uppercase;">Flag</span></h3>
         <h1>Veeam Velocity</h1>
@@ -27,7 +29,7 @@
         <h3>Monday, Jul 26</h3>
         <img class="Veeam-Computer" src="./Assets/Images/VeeamComputer.png" alt="">
         <img class="Veeam-Dots" src="./Assets/Images/VeeamDotsOne.png" alt="">
-      </section>
+      </div>
       <aside class="Register-Form card">
         <h2>Register to attend</h2>
         <form>
@@ -43,11 +45,68 @@
           <input type="checkbox" name="name" placeholder="Checkbox" required>
           <label for="newsletter">Yes, I want to receive communications about Veeam products, services and events. I can unsubscribe at any time.</label>
           <p>By registering you agree to the <a href="https://www.veeam.com/privacy-policy.html" target="_blank">Veeam Privacy Policy</a>.</p>
-          <input type="submit" name="" value="Register Now" class="form-btn">
+          <input type="submit" name="" value="Register Now" class="form-btn btn">
         </form>
         <img class="Veeam-Dots-Form" src="./Assets/Images/VeeamDotsThree.png" alt="">
       </aside>
-    </div>
+    </section>
+    <!-- </div> -->
+
+    <!-- Middle Section -->
+    <section class="Information">
+      <div class="Middle">
+        <h2 class="info-heading">Our ProPartner Program is designed to help you</h2>
+
+        <div class="grid-info">
+          <div class="card">
+            <a href="https://www.veeamlive.com/home" target="_blank"><img class="Recording-Live" src="./Assets/Images/LiveRecording.png" alt="Live Recording"></a>
+          </div>
+          <div class="Info-Text card">
+            <p>Are you challenged by meeting the demands of the Always‑On Enterprise™ and maximizing your organization's investment in the Modern Data Center? If so, join us for a webinar where you'll learn how Veeam® Software and Nutanix’s joint
+              solution can help you achieve:</p> <br>
+            <ul>
+              <li>Improve Productivity</li>
+              <li>Create powerful solutions for fast backup and fast restore </li>
+              <li>Improve efficiency across your business</li>
+              <li>And More</li>
+            </ul> <br>
+            <p>Learn how organizations like yours can benefit from Cisco and Veeam®.</p><br>
+            <h3>Gain access to innovative learning tools</h3><button type="button" name="button" class="info-btn btn">Watch Now</button>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </section>
+
+    <!-- Team Photos -->
+    <section class="Team">
+      <div class="Bottom">
+        <h2>Learn from Veeam experts</h2>
+
+        <div class="flex">
+          <div class="card">
+            <img src="./Assets/Images/DannyAllen.png" alt="DannyAllen">
+            <h4>Danny Allen</h4>
+          </div>
+          <div class="card">
+            <img src="./Assets/Images/OlivierRobinne.png" alt="OlivierRobinne">
+            <h4>Olivier Robinne</h4>
+          </div>
+          <div class="card">
+            <img src="./Assets/Images/MikeResseler.png" alt="MikeResseler">
+            <h4>Mike Resseler</h4>
+          </div>
+          <div class="card">
+            <img src="./Assets/Images/RickVanover.png" alt="RickVanover">
+            <h4>Rick Vanover</h4>
+          </div>
+          <div class="card">
+            <img src="./Assets/Images/MichaelCade.png" alt="MichaelCade">
+            <h4>Michael Cade</h4>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 

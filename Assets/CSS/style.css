@@ -50,7 +50,7 @@ img {
 .flex-container {
   height: 670px;
   /* margin-top: 24px; */
-  background: #004550;
+  /* background: #004550; */
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   /* max-width: 1280px; */
   padding: 0 10px;
@@ -64,8 +64,6 @@ img {
   grid-template-columns: 1.3fr 1fr;
   grid-gap: 20px;
 }
-
-
 
 .main-logo {
   background-color: #004550;
@@ -179,4 +177,116 @@ img {
   position: absolute;
   margin-left: 990px;
   margin-top: -590px;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+
+/* Information Section */
+.Middle {
+  background-color: #fff;
+  position: relative;
+  height: 670px;
+  padding: 0 10px;
+  margin: 0px auto;
+}
+
+.Information {
+  padding-top: 100px;
+}
+
+.info-heading {
+  text-align: center;
+  margin: 16px;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.Recording-Live {
+  width: 45%;
+  /* position: absolute; */
+  text-align: center;
+  float: right;
+  /* margin-left: 550px; */
+  margin-top: 15px;
+  margin-right: 60px;
+}
+
+.grid-info {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  grid-gap: 20px;
+}
+
+.Info-Text {
+  width: 55%;
+}
+
+.Info-Text ul {
+  margin-left: 15px;
+}
+
+.Info-Text li {
+  padding: 10px 0px 10px;
+}
+
+.Info-Text button {
+  float: right;
+  display: inline-block;
+  font-family: Tahoma;
+  font-size: 16px;
+  /* display: inline-block; */
+  padding: 12px 24px;
+  cursor: pointer;
+  background: #00b336;
+  color: #fff;
+  border-radius: 24px;
+  width: 22%;
+  text-transform: uppercase;
+  font-weight: 600;
+  /* margin-top: 15px; */
+  border: none;
+}
+
+.Info-Text h3 {
+  font-size: 24px;
+  display: inline;
+}
+
+.Middle hr {
+  width: 58%;
+  margin: 40px auto;
+}
+
+/* Team Section */
+
+.Team .card {
+  text-align: center;
+  margin: 18px 10px 40px;
+}
+
+.flex-team img {
+  width: 100px;
+  display: inline;
+}
+
+.flex-team h4 {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 10px;
+  margin: 0px auto;
+  flex-wrap: wrap;
+}
+
+.flex .card {
+  width: 300px;
 }
