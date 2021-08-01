@@ -2,7 +2,9 @@
 <html lang="en" dir="ltr">
 
   <head>
+    <!-- This includes all languages WW -->
     <meta charset="utf-8">
+    <!-- The Viewport is used so that everything is capatible for all devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Veeam Coding Challenge">
     <meta name="author" content="Malcolm Strong">
@@ -142,3 +144,421 @@
   </body>
 
 </html>
+
+
+
+
+/* Universal Attributes */
+* {
+  box-sizing: border-box;
+  /* Box-Sizing allows us to include the padding and border in an element's total width and height. */
+  margin: 0;
+  /* This resets the margin for all elements globally due to default margin on elements due to the browser  */
+  padding: 0;
+  /* This resets the padding for all elements globally due to default padding on elements due to the browser  */
+}
+
+body {
+  font-family: 'Tahoma';
+  color: #333;
+  line-height: 1.6;
+  /* The line height is here set to 1.6. This is a unitless value;
+meaning that the line height will be relative to the font size. This is usually recommended */
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  /* This gets rid of all underlines on links */
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+  /* This will make Headers 1-3 a little lighter in boldness than normal */
+  line-height: 1.2;
+  /* This will make the space between paragrphs a tad bit shorter/smaller */
+  margin: 10px 0;
+  /* Margin on ONLY top and bottom. This will add some space between headers. */
+}
+
+p {
+  margin: 10px 0;
+  /* Margin on ONLY top and bottom. This will add some space between paragraphs. */
+}
+
+img {
+  width: 100%;
+  /* This will keep the width of the images inside the set container. So even with a larger image, it will stay within the set container */
+}
+
+/* Universal Colors */
+:root {
+  --maingreen-color: #004550;
+}
+
+/* Hero Section */
+.Hero {
+  background-color: var(--maingreen-color);
+  color: #fff;
+  position: relative;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Hero h1 {
+  font-size: 70px;
+}
+
+.Hero .Veeam-Dots {
+  width: 5%;
+  position: absolute;
+  top: 450px;
+}
+
+.Hero-Heading h1,h3 {
+  padding-left: 70px;
+}
+
+.Hero-Heading .Veeam-Logo {
+  width: 50%;
+  padding-left: 70px;
+  padding-top: 70px;
+}
+
+.Hero-Heading h3 {
+  padding-top: 50px;
+  font-size: 30px;
+}
+
+.Hero-Heading .Veeam-Computer {
+  float: right;
+  width: 40%;
+  margin-top: -180px;
+}
+
+.Hero-Form {
+  padding-bottom: 90px;
+}
+
+.Hero-Form .form-layout {
+  margin: 25px 0;
+}
+
+.Hero-Form h2 {
+  padding-bottom: 20px;
+}
+
+.Hero-Form input[type='text'],
+.Hero-Form input[type='text'],
+.Hero-Form input[type='email'] {
+  width: 100%;
+  padding: 15px;
+  font-size: 15px;
+}
+
+.Hero-From input:hover {
+  outline: none;
+}
+
+.Hero-Form a {
+  text-decoration: none;
+  color: #93ea20;
+}
+
+.Hero-Form .Veeam-Dots-Form {
+  width: 3%;
+  position: absolute;
+  right: 0px;
+  bottom: 90px;
+}
+
+/* Information Section */
+.Information {
+  padding-top: 100px;
+}
+
+.Information .info-heading {
+  text-align: center;
+  padding-bottom: 30px;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.Information h4 {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.info-text ul {
+  margin-left: 15px;
+}
+
+.info-text li {
+  padding: 0px 0px 10px;
+}
+
+.info-btn {
+  font-family: Tahoma;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background: #00b336;
+  color: #fff;
+  border-radius: 24px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  margin: 330px 0px 0px 0px;
+}
+
+/* Team Section */
+.Team {
+  padding-top: 50px;
+}
+
+.Team .team-heading {
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.pic {
+  padding-top: 30px;
+}
+
+.Team .pic {
+  text-align: center;
+  margin: 18px 10px 40px;
+  transition: transform 0.2s ease-in;
+  flex: 1;
+}
+
+.Team h4 {
+  font-size: 30px;
+  font-weight: 400;
+  padding: 10px 55px 0px 0px;
+}
+
+.Team h5 {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 5px 55px 0px 0px;
+  color: #999999;
+}
+
+.Team .flex {
+  flex-wrap: wrap;
+}
+
+.Team .pic:hover {
+  transform: translateY(-15px);
+}
+
+
+/* Footer */
+.footer {
+  padding-top: 200px;
+}
+
+.grid-footer {
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+}
+
+.footer-background {
+  background: #F1F1F1;
+}
+
+.social {
+  text-align: center;
+}
+
+.social a {
+  padding: 10px;
+}
+
+/* Master Styles */
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 10px;
+  margin: 0px auto;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 50px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid-info {
+  grid-template-columns: 3fr 4fr 1fr;
+}
+
+hr {
+  margin-top: 100px;
+}
+
+.center {
+  text-align: center;
+}
+
+.Hero-Form .form-btn {
+  font-family: Tahoma;
+  font-size: 16px;
+  display: inline-block;
+  padding: 12px 24px;
+  cursor: pointer;
+  background: #93ea20;
+  color: #005f4b;
+  border-radius: 99px;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 35px;
+  border: none;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  margin: 10% auto;
+  padding: 60px;
+  width: 40%;
+  animation-name: modalOpen;
+  animation-duration: 1s;
+}
+
+.modal-content iframe {
+  border: 10px transparent;
+}
+
+.modal-header {
+  padding: 15px;
+}
+
+.modal-header img {
+  margin: 0;
+  width: 40%;
+}
+
+#closeBtn {
+  color: #ccc;
+  float: right;
+  font-size: 50px;
+}
+
+#closeBtn:hover, #closeBtn:focus {
+  color: #00b336;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes modalOpen {
+  from{opacity: 0}
+  to {opacity: 1}
+}
+
+
+/* Media Query */
+
+/* Tablets / Under */
+@media (max-width: 768px) {
+  .grid,
+  .Hero .grid,
+  .Information, .grid,
+  .footer .grid {
+    grid-template-columns: 1fr;
+  }
+  .Hero-Heading .Veeam-Computer,
+  .Hero .Veeam-Dots,
+  .Hero-Form .Veeam-Dots-Form,
+   .modal-header {
+    display: none;
+  }
+  .Team .team-heading {
+    text-align: center;
+  }
+  .Hero-Heading h1,h3 {
+    text-align: center;
+  }
+  .Hero-Heading .Veeam-Logo {
+    width: 100%;
+  }
+  .info-btn {
+    margin: auto;
+    width: 100%;
+  }
+
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+
+}
+
+
+// Get the Modal
+var modal = document.getElementById('simpleModal');
+
+// Get open Modal button
+var modalBtn = document.getElementById('modalBtn');
+
+// Get the closeBtn
+var closeBtn = document.getElementById('closeBtn');
+
+// Listen for a Click
+modalBtn.addEventListener('click', openModal);
+
+// Listen for close btn click
+closeBtn.addEventListener('click', closeModal);
+
+// Outside/Window Click to close
+window.addEventListener('click', outside);
+
+// Function to open simpleModal
+function openModal(){
+  modal.style.display = 'block';
+}
+
+// When user clicks the closeBtn
+function closeModal(){
+  modal.style.display = 'none';
+}
+
+// When User Cliks Outside the boc
+function outside(e){
+  if(e.target == modal){
+    modal.style.display = 'none';
+  }
+}

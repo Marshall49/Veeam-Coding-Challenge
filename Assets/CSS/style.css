@@ -294,26 +294,49 @@ hr {
   height: 100%;
   width: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .modal-content {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 10px;
   margin: 10% auto;
-  padding: 20px;
-  width: 20%;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  padding: 60px;
+  width: 40%;
   animation-name: modalOpen;
   animation-duration: 1s;
+}
+
+.modal-content iframe {
+  border: 10px transparent;
+}
+
+.modal-header {
+  padding: 15px;
+}
+
+.modal-header img {
+  margin: 0;
+  width: 40%;
+}
+
+#closeBtn {
+  color: #ccc;
+  float: right;
+  font-size: 50px;
+}
+
+#closeBtn:hover, #closeBtn:focus {
+  color: #00b336;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 @keyframes modalOpen {
   from{opacity: 0}
   to {opacity: 1}
 }
-
-
-
-
 
 
 /* Media Query */
@@ -328,7 +351,8 @@ hr {
   }
   .Hero-Heading .Veeam-Computer,
   .Hero .Veeam-Dots,
-  .Hero-Form .Veeam-Dots-Form {
+  .Hero-Form .Veeam-Dots-Form,
+   .modal-header {
     display: none;
   }
   .Team .team-heading {
