@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="./Assets/CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"
       referrerpolicy="no-referrer" />
   </head>
@@ -73,12 +72,22 @@
             <h4>Gain access to innovative learning tools</h4>
           </div>
           <div>
-            <button type="button" name="button" class="info-btn btn">Watch Now</button>
+            <button type="button" name="button" id="modalBtn" class="info-btn btn">Watch Now</button>
           </div>
         </div>
         <hr>
       </div>
     </section>
+
+    <!-- Modal Box -->
+    <div id="simpleModal" class="modal">
+      <div class="modal-content">
+        <iframe src="https://www.youtube.com/embed?v=yxhTq9s-pbw" width="420" height="345"></iframe>
+
+
+      </div>
+
+    </div>
     <!-- Team Section -->
     <section class="Team">
       <div class="container">
@@ -129,6 +138,8 @@
         </div>
       </div>
     </footer>
+
+    <script type="text/javascript" src="./Assets/Javascript/Main.js"></script>
   </body>
 
 </html>
