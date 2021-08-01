@@ -13,151 +13,122 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
   </head>
 
   <body>
-
-
-    <!-- <div class="flex-container grid"> -->
-    <section class="flex-container grid">
-      <div class="main-logo card">
-        <img class="Veeam-Logo" src="./Assets/Images/VeeamLogoOne.png" alt="VeeamMainLogo">
-        <h3><span style="color: #93ea20;text-transform: uppercase;">Flag</span></h3>
-        <h1>Veeam Velocity</h1>
-        <h1>Renewals</h1>
-        <h3>Monday, Jul 26</h3>
-        <img class="Veeam-Computer" src="./Assets/Images/VeeamComputer.png" alt="">
-        <img class="Veeam-Dots" src="./Assets/Images/VeeamDotsOne.png" alt="">
+    <!-- Hero-Logo Section -->
+    <section class="Hero">
+      <img class="Veeam-Dots" src="./Assets/Images/VeeamDotsOne.png" alt="">
+      <div class="container grid">
+        <div class="Hero-Heading">
+          <img class="Veeam-Logo" src="./Assets/Images/VeeamLogoOne.png" alt="VeeamMainLogo">
+          <h3><span style="color: #93ea20;text-transform: uppercase;">Flag</span></h3>
+          <h1>Veeam Velocity</h1>
+          <h1>Renewals</h1>
+          <h3>Monday, Jul 26</h3>
+          <img class="Veeam-Computer" src="./Assets/Images/VeeamComputer.png" alt="">
+        </div>
+        <!-- Register Form -->
+        <div class="Hero-Form">
+          <h2>Register to attend</h2>
+          <form>
+            <div class="form-layout">
+              <input type="text" name="name" placeholder="First Name*" required>
+            </div>
+            <div class="form-layout">
+              <input type="text" name="name" placeholder="Last Name*" required>
+            </div>
+            <div class="form-layout">
+              <input type="email" name="name" placeholder="Business Email*" required>
+            </div>
+            <input type="checkbox" name="name" placeholder="Checkbox" required>
+            <label for="newsletter">Yes, I want to receive communications about Veeam products, services and events. I can unsubscribe at any time.</label>
+            <p>By registering you agree to the <a href="https://www.veeam.com/privacy-policy.html" target="_blank">Veeam Privacy Policy</a>.</p>
+            <input type="submit" name="" value="Register Now" class="form-btn btn">
+          </form>
+          <img class="Veeam-Dots-Form" src="./Assets/Images/VeeamDotsThree.png" alt="">
+        </div>
       </div>
-      <aside class="Register-Form card">
-        <h2>Register to attend</h2>
-        <form>
-          <div class="form-layout">
-            <input type="text" name="name" placeholder="First Name*" required>
-          </div>
-          <div class="form-layout">
-            <input type="text" name="name" placeholder="Last Name*" required>
-          </div>
-          <div class="form-layout">
-            <input type="email" name="name" placeholder="Business Email*" required>
-          </div>
-          <input type="checkbox" name="name" placeholder="Checkbox" required>
-          <label for="newsletter">Yes, I want to receive communications about Veeam products, services and events. I can unsubscribe at any time.</label>
-          <p>By registering you agree to the <a href="https://www.veeam.com/privacy-policy.html" target="_blank">Veeam Privacy Policy</a>.</p>
-          <input type="submit" name="" value="Register Now" class="form-btn btn">
-        </form>
-        <img class="Veeam-Dots-Form" src="./Assets/Images/VeeamDotsThree.png" alt="">
-      </aside>
     </section>
-    <!-- </div> -->
-
-    <!-- Middle Section -->
+    <!-- Information Section -->
     <section class="Information">
-      <div class="Middle">
+      <div class="container">
         <h2 class="info-heading">Our ProPartner Program is designed to help you</h2>
-
-        <div class="grid-info">
-          <div class="card">
+        <div class="grid grid-info">
+          <div>
             <a href="https://www.veeamlive.com/home" target="_blank"><img class="Recording-Live" src="./Assets/Images/LiveRecording.png" alt="Live Recording"></a>
           </div>
-          <div class="Info-Text card">
+          <div class="info-text">
             <p>Are you challenged by meeting the demands of the Always‑On Enterprise™ and maximizing your organization's investment in the Modern Data Center? If so, join us for a webinar where you'll learn how Veeam® Software and Nutanix’s joint
-              solution can help you achieve:</p> <br>
+              solution can help you achieve:</p>
             <ul>
               <li>Improve Productivity</li>
               <li>Create powerful solutions for fast backup and fast restore </li>
               <li>Improve efficiency across your business</li>
               <li>And More</li>
-            </ul> <br>
+            </ul><br>
             <p>Learn how organizations like yours can benefit from Cisco and Veeam®.</p><br>
-            <h3>Gain access to innovative learning tools</h3><button type="button" name="button" class="info-btn btn">Watch Now</button>
+            <h4>Gain access to innovative learning tools</h4>
+          </div>
+          <div>
+            <button type="button" name="button" class="info-btn btn">Watch Now</button>
           </div>
         </div>
         <hr>
       </div>
     </section>
-
-    <!-- Team Photos -->
+    <!-- Team Section -->
     <section class="Team">
-      <div class="Bottom">
-        <h2>Learn from Veeam experts</h2>
+      <div class="container">
+        <h2 class="team-heading">Learn from our experts</h2>
 
-        <div class="flex">
-          <div class="card">
-            <img src="./Assets/Images/DannyAllen.png" alt="DannyAllen">
+        <div class="flex flex-team">
+          <div class="pic">
+            <a href="https://www.youtube.com/watch?v=MnAl5acI2Nk" target="_blank"><img src="./Assets/Images/DannyAllen.png" alt="DannyAllen"></a>
             <h4>Danny Allen</h4>
+            <h5>Chief Technology Officer</h5>
           </div>
-          <div class="card">
-            <img src="./Assets/Images/OlivierRobinne.png" alt="OlivierRobinne">
+          <div class="pic">
+            <a href="https://www.youtube.com/watch?v=ZB9mxkVPBYg" target="_blank"><img src="./Assets/Images/OlivierRobinne.png" alt="OlivierRobinne"></a>
             <h4>Olivier Robinne</h4>
+            <h5>Vice President, EMEA</h5>
           </div>
-          <div class="card">
-            <img src="./Assets/Images/MikeResseler.png" alt="MikeResseler">
+          <div class="pic">
+            <a href="https://www.youtube.com/watch?v=wUwoMsOaWAQ" target="_blank"><img src="./Assets/Images/MikeResseler.png" alt="MikeResseler"></a>
             <h4>Mike Resseler</h4>
+            <h5>Director Product Management</h5>
           </div>
-          <div class="card">
-            <img src="./Assets/Images/RickVanover.png" alt="RickVanover">
+          <div class="pic">
+            <a href="https://www.youtube.com/watch?v=Q0NrsFSXKC0" target="_blank"><img src="./Assets/Images/RickVanover.png" alt="RickVanover"></a>
             <h4>Rick Vanover</h4>
+            <h5>Senior Director, Product Strategy</h5>
           </div>
-          <div class="card">
-            <img src="./Assets/Images/MichaelCade.png" alt="MichaelCade">
+          <div class="pic">
+            <a href="https://www.youtube.com/watch?v=oqacrO_iBJg" target="_blank"><img src="./Assets/Images/MichaelCade.png" alt="MichaelCade"></a>
             <h4>Michael Cade</h4>
+            <h5>Senior Global Technologist, Product Strategy </h5>
           </div>
         </div>
       </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-    <!-- Logo Home and Heading/Title -->
-    <!-- <section>
-      <section class="Main-Section">
-        <div class="container grid">
-          <div class="Main-Section-Left">
-            <img src="./Assets/Images/VeeamLogoOne.png" alt="Veeam Logo One">
-            <h3>Flag</h3>
-            <h1>Title</h1>
-            <h3>Monday, Jul 26</h3>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-background">
+        <div class="container">
+          <div class="grid grid-footer">
+            <p>&copy; 2021 Veeam® Software | Privacy Policy & Cookies | EULA | Licensing Policy</p>
+            <div class="social">
+              <a href="https://twitter.com/Veeam?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.facebook.com/VeeamSoftware/" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://github.com/topics/veeam-backup" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.youtube.com/channel/UC5YkxcYCG5b-fCcvHniW_ag" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
           </div>
         </div>
-      </section>
-
-      <section class="Register-Section">
-        <div class="container grid">
-          <div class="Main-Section-Right form">
-            <h2>Register to Attend</h2>
-            <form>
-              <div class="form-layout">
-                <input type="text" name="name" placeholder="First Name*" required>
-              </div>
-              <div class="form-layout">
-                <input type="text" name="name" placeholder="Last Name*" required>
-              </div>
-              <div class="form-layout">
-                <input type="email" name="name" placeholder="Business Email*" required>
-              </div>
-              <input type="checkbox" name="name" placeholder="Business Email*" required>
-              <label for="newsletter">Yes, I want to receive communications about Veeam products, services and events. I can unsubscribe at any time.</label>
-              <p>By registering you agree to the Veeam Privacy Policy.</p>
-              <input type="submit" name="" value="Send" class="form-btn">
-            </form>
-          </div>
-        </div>
-      </section>
-    </section> -->
-
-
-
-
-
+      </div>
+    </footer>
   </body>
 
 </html>
