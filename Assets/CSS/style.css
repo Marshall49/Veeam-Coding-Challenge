@@ -341,7 +341,7 @@ hr {
 
 /* Media Query */
 
-/* Tablets / Under */
+/* Tablets */
 @media (max-width: 768px) {
   .grid,
   .Hero .grid,
@@ -371,8 +371,38 @@ hr {
 
 }
 
-/* Mobile */
+/* Small screens, laptops */
+@media (max-width: 1024px) {
+  .grid,
+  .Hero .grid,
+  .Information, .grid,
+  .footer .grid {
+    grid-template-columns: 2fr;
+  }
 
+  .Hero-Heading .Veeam-Computer,
+  .Hero .Veeam-Dots,
+  .Hero-Form .Veeam-Dots-Form,
+   .modal-header {
+    display: none;
+  }
+  .Team .team-heading {
+    text-align: center;
+  }
+  .Hero-Heading h1,h3 {
+    text-align: center;
+  }
+  .Hero-Heading .Veeam-Logo {
+    width: 100%;
+  }
+  .info-btn {
+    margin: auto;
+    width: 100%;
+  }
+
+}
+
+/* Mobile */
 @media (max-width: 500px) {
 
 }
